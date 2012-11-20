@@ -32,15 +32,29 @@
 
         <div class="container">
 
+            <div class='row'>
+
             <h2>Select Dates</h2>
-            <div id='left' class='span4'>
-                <p>Check-in: <input id='checkin' size='50'></p>
-                <br />
-                <p>Check-out: <input id='checkout' size='50'></p>
+            <div id='left' class='span5'>
+                <form class='form-horizontal'>
+                    <div class='control-group'>
+                        <label class='control-label' for='checkin'>Check-in:</label>
+                        <div class='controls'>
+                            <input id='checkin' type='text' class='input-large'></p>
+                        </div>
+                    </div>
+                    <div class='control-group'>
+                        <label class='control-label' for='checkout'>Check-out:</label>
+                        <div class='controls'>
+                            <input id='checkout' type='text' class='input-large'></p>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div id='right' class='span5'>
                 <div type="text" id="datepicker"></div>
             </div>
+        </div>
 
         </div> <!-- /container -->
 
