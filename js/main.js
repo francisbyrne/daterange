@@ -7,9 +7,9 @@
  */
 
 $(function() {
-	var selected = null,
+	var selected  = null,
 		startDate = null,
-		endDate		= null;
+		endDate	  = null;
 
 		$( "#datepicker" ).datepicker({ 
 			minDate: -5, 
@@ -18,7 +18,7 @@ $(function() {
 			altFormat: "DD, d MM, yy",
 			beforeShowDay: function(date) {
 				if ( startDate <= date && endDate >= date ) {
-              	return [true, 'ui-state-active ui-datepicker-current-day'];
+              	return [true, 'highlighted ui-datepicker-current-day'];
               } else {
               	return [true, ''];
               }
